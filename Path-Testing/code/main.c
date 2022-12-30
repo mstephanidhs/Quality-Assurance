@@ -11,16 +11,32 @@ int main()
 	 
 	while (b!=a) { 
 	 b++;
-	 if (c>a) a++;
-	 else c++;
-	 }
+	 printf("\n b = %d", b);
+	 if (c>a) {
+	 	a++;
+	 	printf("\n a = %d", a);
+	 	}
+	 else{
+	 	c++;
+	 	printf("\n c = %d", c);
+	 	} 
+	}
 	 
-	if (a==b && c!=b) c++;
-	else c=b;
+	if (a==b && c!=b) {
+		c++;
+		printf("\nSecond if statement");
+	} 
+	else {
+		c=b;
+		printf("\Second else statement");	
+	} 
 	
-	if (c>50) c=c+a;
+	if (c>50) {
+		c=c+a;
+		printf("\nThird if statement");
+	}
 	
-	printf ("Number is %d \n", c);
+	printf ("\nNumber is %d \n", c);
 	
 	return 0;
 }
